@@ -20,17 +20,17 @@
 
           <br>
           <br>
-          <form class="row g-3 needs-validation">
+          <form action="" id="formulario_bodega" class="row g-3 needs-validation">
             <div class="container-fluid">
               <div class="row">
 
                 <div class="col-sm-12 col-md-6">
                   <div class="mb-3 fw-bold">
-                    <label for="rut" class="form-label">Categoria</label>
+                    <label for="categoria" id="categoria" class="form-label">Categoria</label>
                     <label class="visually-hidden" for="autoSizingSelect">Preference</label>
                         <div class="col-sm-6">
-                            <select class="form-select" id="autoSizingSelect">
-                                <option selected>Elegir...</option>
+                            <select class="form-select" id="categoria" id="autoSizingSelect">
+                                <option value>Elegir...</option>
                                 <option value="1">Perros</option>
                                 <option value="2">Gatos</option>
                                 <option value="3">Otros...</option>
@@ -40,11 +40,11 @@
                   
 
                   <div class="mb-3 fw-bold">
-                    <label for="nombres" class="form-label">Nombre</label>
+                    <label for="nombres" id="nombre" class="form-label">Nombre</label>
                     <label class="visually-hidden" for="autoSizingSelect">Preference</label>
                         <div class="col-sm-6">
-                            <select class="form-select" id="autoSizingSelect">
-                                <option selected>Elegir...</option>
+                            <select class="form-select" id="nombre" id="autoSizingSelect">
+                                <option value>Elegir...</option>
                                 <option value="1">Saco alimento royal canin</option>
                                 <option value="2">NO SE</option>
                                 <option value="3">Otros...</option>
@@ -53,12 +53,12 @@
                   </div>
 
                   <div class="mb-3 fw-bold">
-                    <label for="apellidos" class="form-label">Cantidad</label>
-                    <input type="text" class="form-control" id="apellidos" required>
+                    <label for="cantidad" id="cantidad" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="cantidad" required>
                   </div>
 
 
-                  <button type="submit" class="btn btn-primary">Nuevo</button>
+                  <button type="submit" id="nuevo" class="btn btn-primary">Nuevo</button>
                   <button type="reset" class="btn btn-primary">Agregar</button>
                 </div>
                 
@@ -134,6 +134,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
         <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/traducciones.js"></script>
+    <script src="js/formulariosJQValidate.js"></script>
     
     <!-- Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
@@ -148,6 +151,5 @@
     <!-- Mis scripts -->
     <script src="js/api.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/footer.js"></script>
       </body>
     </html>
