@@ -20,24 +20,25 @@
     </div>
 
     <div class="container-fluid"></div>
-    <form action="" id="formularioMP">
+    <form>
+        <!-- imagen de sacos -->
         <div style="margin-left: 40px;">
             <div class="row mb-3">
-                <label for="colFormLabel" id="id" class="col-sm-2 col-form-label">ID</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label">ID</label>
                 <div class="col-sm-1">
-                    <input type="text" class="form-control" name="id" id="id" id="colFormLabel" placeholder="">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
                 </div>
             </div>
         </div>
 
         <div style="margin-left: 40px;">
             <div class="row mb-3">
-                <label for="colFormLabel" id="categoria" class="col-sm-2 col-form-label">Categoria</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Categoria</label>
                 <div class="col-sm-6">
                     <div class="col-6">
                         <label class="visually-hidden" for="autoSizingSelect">Preference</label>
                         <div class="col-sm-6">
-                            <select class="form-select" name="categoria" id="categoria" id="autoSizingSelect">
+                            <select class="form-select" id="autoSizingSelect">
                                 <option selected>Elegir...</option>
                                 <option value="1">Perros</option>
                                 <option value="2">Gatos</option>
@@ -63,19 +64,19 @@
 
         <div style="margin-left: 40px;">
             <div class="row mb-3">
-                <label for="colFormLabel" id="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Nombre</label>
                 <div class="col-sm-2">
-                    <input type="text" name="nombre" id="nombre" class="form-control" id="colFormLabel" placeholder="">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
                 </div>
             </div>
         </div>
 
         <div style="margin-left: 40px;">
             <div class="row mb-3">
-                <label for="colFormLabel" id="descripcion" class="col-sm-2 col-form-label">Descripcion</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Descripcion</label>
                 <div class="col-sm-4">
                     <div class="form-floating">
-                        <textarea name="descripcion" id="descripcion" class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
                     </div>
                 </div>
             </div>
@@ -83,27 +84,27 @@
 
         <div style="margin-left: 40px;">
             <div class="row mb-3">
-                <label for="colFormLabel" id="precio" class="col-sm-2 col-form-label">Precio</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Precio</label>
                 <div class="col-sm-2">
-                    <input type="text" name="precio" id="precio" class="form-control" id="colFormLabel" placeholder="">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
                 </div>
             </div>
         </div>
 
         <div style="margin-left: 40px;">
             <div class="row mb-3">
-                <label for="colFormLabel" id="desc" class="col-sm-2 col-form-label">Descuento subscripctor</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Descuento subscripctor</label>
                 <div class="col-sm-1">
-                    <input type="text" name="desc" id="desc" class="form-control" id="colFormLabel" placeholder="">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
                 </div>
             </div>
         </div>
 
         <div style="margin-left: 40px;">
             <div class="row mb-3">
-                <label for="colFormLabel" id="descxoferta" class="col-sm-2 col-form-label">Descuento por oferta</label>
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Descuento por oferta</label>
                 <div class="col-sm-1">
-                    <input type="text" name="descxoferta" id="descxoferta" class="form-control" id="colFormLabel" placeholder="">
+                    <input type="text" class="form-control" id="colFormLabel" placeholder="">
                 </div>
             </div>
         </div>
@@ -113,7 +114,7 @@
         <div style="margin-left: 40px;">
             <div class="row" id="botones">
                 <div class="col text-left">
-                    <button type="submit" id="cargar" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
                     <button type="submit" class="btn btn-primary">Nuevo</button>
                     <button type="reset" class="btn btn-primary">Eliminar</button>
                     <button type="reset" class="btn btn-primary">Limpiar</button>
@@ -179,11 +180,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-                <!-- JQuery -->
+        <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="js/traducciones.js"></script>
-    <script src="js/formulariosJQValidate.js"></script>
     
     <!-- Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
@@ -196,8 +194,10 @@
         crossorigin="anonymous"></script>
 
     <!-- Mis scripts -->
+    <!-- Mis scripts -->
     <script src="js/api.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html>
