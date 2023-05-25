@@ -100,11 +100,3 @@ a:visited {
     text-align: center;
 }
 
-label.error {
-    color: darkred;
-}
-
-input.error {
-    border: 1px solid darkred;
-}
-
